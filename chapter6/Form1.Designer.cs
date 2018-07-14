@@ -89,6 +89,7 @@
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Fancy Decorations";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -99,6 +100,7 @@
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Healthy Option";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label2
             // 
@@ -187,6 +189,7 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Happy Birthday";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -205,7 +208,6 @@
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cake Writing";
-            //this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // checkBox3
             // 
@@ -216,6 +218,7 @@
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Fancy Decorations";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // numericUpDown2
             // 

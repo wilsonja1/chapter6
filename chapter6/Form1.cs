@@ -24,17 +24,6 @@ namespace chapter6
             DisplayBirthdayPartyCost();
         }
 
-        private void fancyBox_CheckedChanged(object sender, EventArgs e)
-        {
-            dinnerParty.FancyDecorations = checkBox1.Checked;
-            DisplayDinnerPartyCost();
-        }
-
-        private void healthyBox_CheckedChanged(object sender, EventArgs e)
-        {
-            dinnerParty.HealthyOption = checkBox2.Checked;
-            DisplayDinnerPartyCost();
-        }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
@@ -48,19 +37,6 @@ namespace chapter6
             costLabel.Text = Cost.ToString("c");
         }
 
- /*      
-
-        private void fancyBirthday_CheckedChanged(object sender, EventArgs e)
-        {
-            birthdayParty.FancyDecorations = fancyBirthday.Checked;
-            DisplayBirthdayPartyCost();
-        }
-
-        private void cakeWriting_TextChanged(object sender, EventArgs e)
-        {
-            birthdayParty.CakeWriting = cakeWriting.Text;
-            DisplayBirthdayPartyCost();
-        }*/
 
 
         private void DisplayBirthdayPartyCost()
@@ -72,11 +48,33 @@ namespace chapter6
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            birthdayParty.NumberOfPeople = (int)numberBirthday.Value;
+            birthdayParty.NumberOfPeople = (int)numericUpDown2.Value;
             DisplayBirthdayPartyCost();
         }
 
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            birthdayParty.FancyDecorations = checkBox3.Checked;
+            DisplayBirthdayPartyCost();
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            birthdayParty.CakeWriting = textBox1.Text;
+            DisplayBirthdayPartyCost();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            dinnerParty.HealthyOption = checkBox2.Checked;
+            DisplayDinnerPartyCost();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            dinnerParty.FancyDecorations = checkBox1.Checked;
+            DisplayDinnerPartyCost();
+        }
     }
 }
 
