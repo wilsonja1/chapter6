@@ -26,7 +26,13 @@ namespace chapter6
         {
             get
             {
-                
+                decimal totalCost = CalculateCostOfDecorations();
+                totalCost += CostOfFoodPerPerson * NumberOfPeople;
+
+                if (NumberOfPeople > 12)
+                    totalCost += 100;
+
+                return totalCost;
             }
         }
     }
