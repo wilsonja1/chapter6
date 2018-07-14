@@ -10,5 +10,24 @@ namespace chapter6
     {
         public int NumberOfPeople { get; set; }
         public bool FancyDecorations { get; set; }
+        public const int CostOfFoodPerPerson = 25;
+
+        private decimal CalculateCostOfDecorations()
+        {
+            decimal costOfDecorations;
+            if (FancyDecorations)
+                costOfDecorations = (NumberOfPeople * 15.00M) + 50M;
+            else
+                costOfDecorations = (NumberOfPeople * 7.50M) + 30M;
+            return costOfDecorations;
+        }
+
+        virtual public decimal Cost
+        {
+            get
+            {
+                
+            }
+        }
     }
 }
